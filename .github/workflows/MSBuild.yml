@@ -20,4 +20,4 @@ jobs:
       - name: nuget restore
         run: nuget restore mixed.sln
       - name: build using msbuild
-        run: msbuild mixed.sln
+        run: msbuild mixed.sln -graphBuild:True
