@@ -23,4 +23,12 @@ namespace MvcWebApplication
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
+
+    public class WebAppStuff
+    {
+        public WebAppStuff()
+        {
+            new Class1();
+        }
+    }
 }

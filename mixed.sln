@@ -14,6 +14,8 @@ ProjectSection(SolutionItems) = preProject
 	.github\workflows\MSBuild.yml = .github\workflows\MSBuild.yml
 EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", ".github\TestProject\TestProject.csproj", "{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,18 @@ Global
 		{DF3426F7-1DA6-4E61-BC05-CE074BF5C11A}.Release|x64.Build.0 = Release|Any CPU
 		{DF3426F7-1DA6-4E61-BC05-CE074BF5C11A}.Release|x86.ActiveCfg = Release|Any CPU
 		{DF3426F7-1DA6-4E61-BC05-CE074BF5C11A}.Release|x86.Build.0 = Release|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Debug|x64.Build.0 = Debug|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Debug|x86.Build.0 = Debug|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Release|x64.ActiveCfg = Release|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Release|x64.Build.0 = Release|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Release|x86.ActiveCfg = Release|Any CPU
+		{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{55146AA5-A42C-4433-AE36-8482823F0508} = {0821E67F-CB1A-4D5B-83E3-61BB363AD0D8}
