@@ -7,7 +7,7 @@ on:
 
 jobs:
   msbuild_16_8:
-    name: windows-test
+    name: windows-test-16-8
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v1
@@ -23,7 +23,7 @@ jobs:
         run: msbuild mixed.sln
 
   msbuild_16_7:
-    name: windows-test
+    name: windows-test-16-7
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v1
