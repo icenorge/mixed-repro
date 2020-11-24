@@ -2,8 +2,9 @@ name: msbuild-repro-test
 
 on:
   push:
+  pull_request:
     branches:
-      - "master"
+      - master
 
 jobs:
   msbuild_16_8:
