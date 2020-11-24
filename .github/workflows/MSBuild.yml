@@ -19,3 +19,17 @@ jobs:
         run: msbuild -version
       - name: build using msbuild
         run: msbuild mixed.sln
+
+  msbuild_16_7:
+    name: windows-test
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.0.2
+        with:
+          vs-version: 16.7
+      - name: show msbuild version
+        run: msbuild -version
+      - name: build using msbuild
+        run: msbuild mixed.sln
