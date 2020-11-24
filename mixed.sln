@@ -14,7 +14,7 @@ ProjectSection(SolutionItems) = preProject
 	.github\workflows\MSBuild.yml = .github\workflows\MSBuild.yml
 EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", ".github\TestProject\TestProject.csproj", "{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{9A4D2D86-CEC1-4DD7-A915-B9D9F1E6118B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
