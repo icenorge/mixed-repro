@@ -1,5 +1,6 @@
 using MvcWebApplication;
 using NUnit.Framework;
+using TransientProjectB;
 
 namespace TestProject
 {
@@ -13,7 +14,7 @@ namespace TestProject
         [Test]
         public void Test1()
         {
-            new WebAppStuff();
+            new SomeTransientClass();
             Assert.Pass();
         }
     }
