@@ -17,8 +17,8 @@ jobs:
           vs-version: 16.8
       - name: show msbuild version
         run: msbuild -version
-      - name: restore via msbuild
-        run: msbuild -t:restore
+      - uses: nuget/setup-nuget@v1
+        run: nuget restore mixed.sln
       - name: build using msbuild
         run: msbuild mixed.sln
 
@@ -33,7 +33,7 @@ jobs:
           vs-version: 16.7
       - name: show msbuild version
         run: msbuild -version
-      - name: restore via msbuild
-        run: msbuild -t:restore
+      - uses: nuget/setup-nuget@v1
+        run: nuget restore mixed.sln
       - name: build using msbuild
         run: msbuild mixed.sln
