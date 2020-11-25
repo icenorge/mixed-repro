@@ -30,8 +30,12 @@ Source: https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#restore
 Source: https://developercommunity.visualstudio.com/comments/1266427/view.html
 
 
-## Errors
+### Known bugs:
 
+_.NET 5 SDK,  v.5.0.100_
+- "This will fix issues where CI builds fail because they download an older version of NuGet.exe and use this for restore." https://github.com/dotnet/sdk/pull/14517 (❗️ merged, but not released)
+
+## Errors
 
 ### 'project.assets.json' doesn't have a target for {TFM}'
 
