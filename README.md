@@ -15,6 +15,10 @@ TestProject (netcoreapp3.1)
 
 The `TestProject` use classes from `TransientProjectB` in a test.
 
+- ❗️ Fails: building the master branch using `msbuild.exe`
+- ✅ Works: builds the master branch using the IDE, VS2019 16.8.X.
+- ✅ Works: modify the `TestProject` adding a direct reference to `TransientProjectB`, then build using `msbuild.exe`. As in https://github.com/icenorge/mixed-repro/pull/1
+
 
 ### Microsoft recommendations:
 
