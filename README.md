@@ -18,16 +18,17 @@ The `TestProject` use classes from `TransientProjectB` in a test.
 
 ### Microsoft recommendations:
 
-- It's _recommended_ to run `nuget.exe restore` for the old projects (`packages.config`)
+- It has earlier been _recommended_ from MS to run `nuget.exe restore` for the legacy projects (`packages.config`).  [Source](https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#restore-target).
+- ℹ️ Update: MS recommends to use `msbuild -restore /p:RestorePackagesConfig=true` for 16.8 + 5.8 to avoid version conflicts between nuget.exe and msbuild versions. [Source](https://twitter.com/dsplaisted/status/1331683532570181633).
 
-Source: https://docs.microsoft.com/en-us/nuget/reference/msbuild-targets#restore-target
+
 
 - It's recommended to match `nuget.exe` version with the `msbuild.exe`/ `Visual Studio` / `dotnet.exe`:
 
 > It is advised that your toolchain includes VS 16.8+, MSBuild 16.8+ and .NET 5.0+ when using NuGet 5.8 or later.
 > If you restored using an earlier version of NuGet than 5.8 or 16.8, then please delete your obj/ folders and restore & compile with the tools listed above or higher.
 
-Source: https://developercommunity.visualstudio.com/comments/1266427/view.html
+Sources: [[1]](https://developercommunity.visualstudio.com/comments/1266427/view.html), [[2]](https://devblogs.microsoft.com/nuget/getting-started-with-nuget-5-8/#known-issues)
 
 
 ### Known bugs:
