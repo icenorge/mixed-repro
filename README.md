@@ -50,7 +50,7 @@ Solution: _Downgrade to 16.7 tooling (uninstall .NET 5 SDK, and downgrade msbuil
 
 ### Unable to resolve transient references 
 
-Hypothesis: Resolving the transient dependency worked in 16.7.
+Hypothesis: Resolving the transient dependency worked in 16.7, but no longer works in 16.8
 
 >D:\a\mixed-repro\mixed-repro\TestProject\UnitTest1.cs(3,7): error CS0246: The type or namespace name 'TransientProjectB' could not be found (are you missing a using directive or an assembly reference?) [D:\a\mixed-repro\mixed-repro\TestProject\TestProject.csproj]
 
