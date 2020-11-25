@@ -26,8 +26,8 @@ Teardown(ctx =>
 ///////////////////////////////////////////////////////////////////////////////
 
 Task("Default")
-.Does(() => {
-   NuGetRestore("./mixed.sln");
+.Does(() => {   
+   NuGetRestore("./mixed.sln", new NuGetRestoreSettings { Verbosity = NuGetVerbosity.Detailed });
    MSBuild("./mixed.sln");
 });
 
