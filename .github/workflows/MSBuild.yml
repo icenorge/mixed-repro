@@ -17,7 +17,5 @@ jobs:
       - name: show msbuild version
         run: msbuild -version
       - uses: nuget/setup-nuget@v1
-      - name: nuget restore
-        run: nuget restore mixed.sln
-      - name: build using msbuild
-        run: msbuild mixed.sln
+      - name: restore & build using msbuild
+        run: msbuild /restore /p:RestorePackagesConfig=true /t:build
