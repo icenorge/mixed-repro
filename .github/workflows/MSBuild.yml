@@ -17,6 +17,8 @@ jobs:
       - name: show msbuild version
         run: msbuild -version
       - uses: nuget/setup-nuget@v1
+        with:
+          nuget-version: "5.9.0-preview.2"
       - name: nuget restore
         run: nuget restore mixed.sln
       - name: build using msbuild
